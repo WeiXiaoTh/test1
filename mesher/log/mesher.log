@@ -1,0 +1,527 @@
+2018-08-22 09:50:38.963 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from CommandlineSource
+2018-08-22 09:50:38.963 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from MemorySource
+2018-08-22 09:50:38.965 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\circuit_breaker.yaml] not exist
+2018-08-22 09:50:38.965 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\load_balancing.yaml] not exist
+2018-08-22 09:50:38.965 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\rate_limiting.yaml] not exist
+2018-08-22 09:50:38.965 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tls.yaml] not exist
+2018-08-22 09:50:38.966 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\monitoring.yaml] not exist
+2018-08-22 09:50:38.986 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tracing.yaml] not exist
+2018-08-22 09:50:38.986 +08:00 INFO archaius/archaius.go:75 Configuration files: F:\Software\mesher\conf\chassis.yaml, F:\Software\mesher\conf\microservice.yaml, F:\Software\mesher\conf\auth.yaml
+2018-08-22 09:50:38.987 +08:00 INFO config/config.go:312 archaius init success
+2018-08-22 09:50:38.990 +08:00 INFO go-chassis/chassis.go:102 Chain init success
+2018-08-22 09:50:38.990 +08:00 WARN registry/util.go:185 registrator.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 09:50:38.991 +08:00 WARN registry/util.go:185 serviceDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 09:50:38.991 +08:00 WARN registry/util.go:185 contractDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 09:50:38.992 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 09:50:38.992 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [hellomesher].
+2018-08-22 09:50:38.993 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 09:50:38.993 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 09:50:39.208 +08:00 WARN servicecenter/servicecenter.go:34 service [hellomesher:0.0.1:mesher] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 09:50:39.248 +08:00 ERROR servicecenter/servicecenter.go:37 Register service [hellomesher:0.0.1:mesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:39.248 +08:00 ERROR registry/bootstrap.go:58 Register [hellomesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:39.250 +08:00 ERROR registry/registrator.go:78 start bacskoff for register microservice error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:39.251 +08:00 INFO registry/util.go:138 start backoff with initial interval 5s
+2018-08-22 09:50:39.252 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [hellomesher].
+2018-08-22 09:50:39.252 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 09:50:39.253 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 09:50:39.288 +08:00 WARN servicecenter/servicecenter.go:34 service [hellomesher:0.0.1:mesher] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 09:50:39.322 +08:00 ERROR servicecenter/servicecenter.go:37 Register service [hellomesher:0.0.1:mesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:39.322 +08:00 ERROR registry/bootstrap.go:58 Register [hellomesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:44.367 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [hellomesher].
+2018-08-22 09:50:44.367 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 09:50:44.368 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 09:50:44.407 +08:00 WARN servicecenter/servicecenter.go:34 service [hellomesher:0.0.1:mesher] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 09:50:44.448 +08:00 ERROR servicecenter/servicecenter.go:37 Register service [hellomesher:0.0.1:mesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:44.448 +08:00 ERROR registry/bootstrap.go:58 Register [hellomesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:51.986 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [hellomesher].
+2018-08-22 09:50:51.986 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 09:50:51.987 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 09:50:52.032 +08:00 WARN servicecenter/servicecenter.go:34 service [hellomesher:0.0.1:mesher] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 09:50:52.082 +08:00 ERROR servicecenter/servicecenter.go:37 Register service [hellomesher:0.0.1:mesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:52.082 +08:00 ERROR registry/bootstrap.go:58 Register [hellomesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:59.184 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [hellomesher].
+2018-08-22 09:50:59.184 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 09:50:59.184 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 09:50:59.234 +08:00 WARN servicecenter/servicecenter.go:34 service [hellomesher:0.0.1:mesher] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 09:50:59.275 +08:00 ERROR servicecenter/servicecenter.go:37 Register service [hellomesher:0.0.1:mesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:50:59.276 +08:00 ERROR registry/bootstrap.go:58 Register [hellomesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:51:21.556 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [hellomesher].
+2018-08-22 09:51:21.556 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 09:51:21.557 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 09:51:21.596 +08:00 WARN servicecenter/servicecenter.go:34 service [hellomesher:0.0.1:mesher] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 09:51:21.631 +08:00 ERROR servicecenter/servicecenter.go:37 Register service [hellomesher:0.0.1:mesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:51:21.632 +08:00 ERROR registry/bootstrap.go:58 Register [hellomesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:51:39.352 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [hellomesher].
+2018-08-22 09:51:39.352 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 09:51:39.352 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 09:51:39.391 +08:00 WARN servicecenter/servicecenter.go:34 service [hellomesher:0.0.1:mesher] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 09:51:39.421 +08:00 ERROR servicecenter/servicecenter.go:37 Register service [hellomesher:0.0.1:mesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 09:51:39.422 +08:00 ERROR registry/bootstrap.go:58 Register [hellomesher] failed error: RegisterService failed, MicroServiceName/responseStatusCode/responsebody: hellomesher/401/{"errorCode":"401002","errorMessage":"Request unauthorized","detail":"Invalid request, header is invalid, ak sk or project is empty."}
+
+2018-08-22 10:02:45.680 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from CommandlineSource
+2018-08-22 10:02:45.680 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from MemorySource
+2018-08-22 10:02:45.681 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\circuit_breaker.yaml] not exist
+2018-08-22 10:02:45.681 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\load_balancing.yaml] not exist
+2018-08-22 10:02:45.681 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\rate_limiting.yaml] not exist
+2018-08-22 10:02:45.682 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tls.yaml] not exist
+2018-08-22 10:02:45.683 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\monitoring.yaml] not exist
+2018-08-22 10:02:45.684 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tracing.yaml] not exist
+2018-08-22 10:02:45.684 +08:00 INFO archaius/archaius.go:75 Configuration files: F:\Software\mesher\conf\chassis.yaml, F:\Software\mesher\conf\microservice.yaml, F:\Software\mesher\conf\auth.yaml
+2018-08-22 10:02:45.684 +08:00 INFO config/config.go:312 archaius init success
+2018-08-22 10:02:45.687 +08:00 WARN auth/auth.go:249 Huawei Cloud auth mode: ak/sk
+2018-08-22 10:02:45.687 +08:00 INFO go-chassis/chassis.go:102 Chain init success
+2018-08-22 10:02:45.687 +08:00 WARN registry/util.go:185 registrator.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:02:45.688 +08:00 WARN registry/util.go:185 serviceDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:02:45.688 +08:00 WARN registry/util.go:185 contractDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:02:45.689 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:02:45.689 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [hellomesher].
+2018-08-22 10:02:45.690 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 10:02:45.690 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 10:02:46.583 +08:00 WARN servicecenter/servicecenter.go:34 service [hellomesher:0.0.1:mesher] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 10:02:46.633 +08:00 INFO registry/bootstrap.go:61 Register [hellomesher] success
+2018-08-22 10:02:46.675 +08:00 INFO registry/bootstrap.go:90 Don't need add dependency
+2018-08-22 10:02:46.675 +08:00 INFO registry/registrator.go:83 Enable [servicecenter] registrator.
+2018-08-22 10:02:46.676 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:02:46.993 +08:00 INFO registry/discovery.go:67 Enable servicecenter service discovery.
+2018-08-22 10:02:46.993 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:02:46.994 +08:00 INFO registry/discovery.go:85 Enable servicecenter contract discovery.
+2018-08-22 10:02:46.996 +08:00 INFO registry/registrator.go:156 Enabled Registry
+2018-08-22 10:02:46.996 +08:00 INFO loadbalancer/load_balancer.go:112 Enable LoadBalancing
+2018-08-22 10:02:46.997 +08:00 INFO loadbalancer/load_balancer.go:126 Strategy is 
+2018-08-22 10:02:46.997 +08:00 INFO bootstrap/bootstrap.go:37 Bootstrap metric
+2018-08-22 10:02:46.998 +08:00 INFO metrics/metric.go:63 report metrics to CSE Monitoring
+2018-08-22 10:02:46.998 +08:00 WARN cse-collector/utils.go:45 monitor.Consumer TLS mode, verify peer: false, cipher plugin: default
+2018-08-22 10:02:46.999 +08:00 INFO cse-collector/register.go:40 Started sending metric Data to Monitor Server : https://cse.cn-north-1.myhuaweicloud.com:443
+2018-08-22 10:02:46.999 +08:00 INFO metrics/metric.go:63 report metrics to Prometheus
+2018-08-22 10:02:47.000 +08:00 INFO prom/prometheus.go:253 Go Runtime Metrics is enabled
+2018-08-22 10:02:47.001 +08:00 WARN config-center/config_center.go:119 configcenter.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:02:47.239 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from ConfigCenterSource
+2018-08-22 10:02:47.240 +08:00 WARN config-center/config_center.go:78 config center init success
+2018-08-22 10:02:47.240 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteFileSource
+2018-08-22 10:02:47.241 +08:00 INFO cse/router_manager.go:132 Add [RouteFileSource] source success
+2018-08-22 10:02:47.242 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteDarkLaunchGovernSource
+2018-08-22 10:02:47.242 +08:00 INFO cse/router_manager.go:132 Add [RouteDarkLaunchGovernSource] source success
+2018-08-22 10:02:47.243 +08:00 INFO router/router_config.go:39 Router init success
+2018-08-22 10:02:47.243 +08:00 INFO tracing/tracer_manager.go:35 Tracing enabled. Start to init tracer map.
+2018-08-22 10:02:47.244 +08:00 INFO go-chassis/chassis.go:277 Init chassis success, Version is 0.5
+2018-08-22 10:02:47.246 +08:00 INFO archaius/archaius.go:88 config value after change mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 10:02:47.246 +08:00 INFO config-center/config_center.go:210 config value mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 10:02:47.246 +08:00 INFO bootstrap/bootstrap.go:52 Running as sidecar
+2018-08-22 10:02:47.247 +08:00 INFO adminapi/router.go:47 admin server is not using ssl
+2018-08-22 10:02:47.247 +08:00 INFO adminapi/router.go:51 admin server listening on [::]:30102
+2018-08-22 10:02:48.248 +08:00 INFO adminapi/router.go:64 admin server start success
+2018-08-22 10:02:48.248 +08:00 WARN bootstrap/bootstrap.go:41 local service ports is missing, service can not be called by mesher
+2018-08-22 10:02:48.249 +08:00 INFO mesher/mesher.go:38 Version is 1.4.12
+2018-08-22 10:02:48.250 +08:00 INFO server/server_manager.go:58 starting server http...
+2018-08-22 10:02:48.251 +08:00 WARN http/http_server.go:102 Mesher listen on 127.0.0.1, it can only proxy for consumer. for provider, mesher must listen on external ip.
+2018-08-22 10:02:48.252 +08:00 INFO server/server_manager.go:64 http server start success
+2018-08-22 10:02:48.252 +08:00 INFO server/server_manager.go:66 All server Start Completed
+2018-08-22 10:02:48.253 +08:00 INFO registry/bootstrap.go:112 Start to register instance.
+2018-08-22 10:02:48.297 +08:00 INFO registry/bootstrap.go:132 service support protocols map[http:{127.0.0.1:30101  %!s(int=0)  }]
+2018-08-22 10:02:48.350 +08:00 WARN servicecenter/servicecenter.go:58 RegisterMicroServiceInstance get SelfInstancesCache failed, Mid/Sid: 763d56fea5af11e898ba0255ac10552b/77432713a5af11e8a7170255ac105125
+2018-08-22 10:02:48.350 +08:00 WARN servicecenter/servicecenter.go:62 RegisterMicroServiceInstance type asserts failed,  Mid/Sid: 763d56fea5af11e898ba0255ac10552b/77432713a5af11e8a7170255ac105125
+2018-08-22 10:02:48.352 +08:00 INFO servicecenter/servicecenter.go:74 RegisterMicroServiceInstance success, MicroServiceID: 763d56fea5af11e898ba0255ac10552b
+2018-08-22 10:02:48.353 +08:00 INFO registry/heartbeat.go:49 Add HB task, task:763d56fea5af11e898ba0255ac10552b/77432713a5af11e8a7170255ac105125
+2018-08-22 10:02:48.354 +08:00 INFO servicecenter/servicecenter.go:80 RegisterMicroServiceInstance success, microServiceID/instanceID: 763d56fea5af11e898ba0255ac10552b/77432713a5af11e8a7170255ac105125.
+2018-08-22 10:02:48.354 +08:00 INFO registry/bootstrap.go:177 Register instance success, serviceID/instanceID: 763d56fea5af11e898ba0255ac10552b/77432713a5af11e8a7170255ac105125.
+2018-08-22 10:02:49.292 +08:00 INFO cse-collector/csemonitor.go:91 Connection to monitoring server established successfully
+2018-08-22 10:06:04.892 +08:00 ERROR file-source/yamlconfigurationsource.go:449 yaml parsing error  error: open F:\Software\mesher\conf\.sublae1.tmp: The process cannot access the file because it is being used by another process.
+2018-08-22 10:06:04.893 +08:00 WARN file-source/yamlconfigurationsource.go:430 the file change mode: "F:\\Software\\mesher\\conf\\microservice.yaml~RF6627ea.TMP": REMOVE. So stop watching file
+2018-08-22 10:06:04.896 +08:00 WARN file-source/yamlconfigurationsource.go:430 the file change mode: "F:\\Software\\mesher\\conf\\microservice.yaml": REMOVE. So stop watching file
+2018-08-22 10:06:04.897 +08:00 WARN file-source/yamlconfigurationsource.go:439 [F:\Software\mesher\conf\.sublae1.tmp] file does not exist so not able to watch further%!(EXTRA *os.PathError=open F:\Software\mesher\conf\.sublae1.tmp: The system cannot find the file specified.)
+2018-08-22 10:06:04.897 +08:00 INFO archaius/archaius.go:88 config value after change APPLICATION_ID | weathermap
+2018-08-22 10:06:04.897 +08:00 INFO config-center/config_center.go:210 config value APPLICATION_ID | weathermap
+2018-08-22 10:06:20.781 +08:00 ERROR file-source/yamlconfigurationsource.go:449 yaml parsing error  error: open F:\Software\mesher\conf\.sublcd6.tmp: The process cannot access the file because it is being used by another process.
+2018-08-22 10:06:20.782 +08:00 ERROR file-source/yamlconfigurationsource.go:449 yaml parsing error  error: open F:\Software\mesher\conf\microservice.yaml~RF6665fd.TMP: The process cannot access the file because it is being used by another process.
+2018-08-22 10:06:20.782 +08:00 WARN file-source/yamlconfigurationsource.go:430 the file change mode: "F:\\Software\\mesher\\conf\\microservice.yaml~RF6665fd.TMP": REMOVE. So stop watching file
+2018-08-22 10:06:20.784 +08:00 ERROR file-source/yamlconfigurationsource.go:449 yaml parsing error  error: open F:\Software\mesher\conf\microservice.yaml~RF6665fd.TMP: The system cannot find the file specified.
+2018-08-22 10:06:20.785 +08:00 WARN file-source/yamlconfigurationsource.go:439 [F:\Software\mesher\conf\.sublcd6.tmp] file does not exist so not able to watch further%!(EXTRA *os.PathError=open F:\Software\mesher\conf\.sublcd6.tmp: The system cannot find the file specified.)
+2018-08-22 10:06:20.786 +08:00 INFO archaius/archaius.go:88 config value after change service_description.name | helloWorld
+2018-08-22 10:06:20.786 +08:00 INFO config-center/config_center.go:210 config value service_description.name | helloWorld
+2018-08-22 10:06:20.786 +08:00 WARN file-source/yamlconfigurationsource.go:430 the file change mode: "F:\\Software\\mesher\\conf\\microservice.yaml~RF6665fd.TMP": REMOVE. So stop watching file
+2018-08-22 10:06:55.248 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from CommandlineSource
+2018-08-22 10:06:55.250 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from MemorySource
+2018-08-22 10:06:55.251 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\circuit_breaker.yaml] not exist
+2018-08-22 10:06:55.251 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\load_balancing.yaml] not exist
+2018-08-22 10:06:55.251 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\rate_limiting.yaml] not exist
+2018-08-22 10:06:55.252 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tls.yaml] not exist
+2018-08-22 10:06:55.252 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\monitoring.yaml] not exist
+2018-08-22 10:06:55.253 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tracing.yaml] not exist
+2018-08-22 10:06:55.254 +08:00 INFO archaius/archaius.go:75 Configuration files: F:\Software\mesher\conf\chassis.yaml, F:\Software\mesher\conf\microservice.yaml, F:\Software\mesher\conf\auth.yaml
+2018-08-22 10:06:55.254 +08:00 INFO config/config.go:312 archaius init success
+2018-08-22 10:06:55.257 +08:00 WARN auth/auth.go:249 Huawei Cloud auth mode: ak/sk
+2018-08-22 10:06:55.257 +08:00 INFO go-chassis/chassis.go:102 Chain init success
+2018-08-22 10:06:55.258 +08:00 WARN registry/util.go:185 registrator.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:06:55.259 +08:00 WARN registry/util.go:185 serviceDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:06:55.260 +08:00 WARN registry/util.go:185 contractDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:06:55.261 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:06:55.262 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [helloWorld].
+2018-08-22 10:06:55.263 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 10:06:55.263 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 10:06:55.409 +08:00 WARN servicecenter/servicecenter.go:34 service [helloWorld:0.0.1:weathermap] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 10:06:55.460 +08:00 INFO registry/bootstrap.go:61 Register [helloWorld] success
+2018-08-22 10:06:55.501 +08:00 INFO registry/bootstrap.go:90 Don't need add dependency
+2018-08-22 10:06:55.502 +08:00 INFO registry/registrator.go:83 Enable [servicecenter] registrator.
+2018-08-22 10:06:55.503 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:06:55.638 +08:00 INFO registry/discovery.go:67 Enable servicecenter service discovery.
+2018-08-22 10:06:55.638 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:06:55.640 +08:00 INFO registry/discovery.go:85 Enable servicecenter contract discovery.
+2018-08-22 10:06:55.641 +08:00 INFO registry/registrator.go:156 Enabled Registry
+2018-08-22 10:06:55.641 +08:00 INFO loadbalancer/load_balancer.go:112 Enable LoadBalancing
+2018-08-22 10:06:55.643 +08:00 INFO loadbalancer/load_balancer.go:126 Strategy is 
+2018-08-22 10:06:55.643 +08:00 INFO bootstrap/bootstrap.go:37 Bootstrap metric
+2018-08-22 10:06:55.644 +08:00 INFO metrics/metric.go:63 report metrics to CSE Monitoring
+2018-08-22 10:06:55.645 +08:00 WARN cse-collector/utils.go:45 monitor.Consumer TLS mode, verify peer: false, cipher plugin: default
+2018-08-22 10:06:55.645 +08:00 INFO cse-collector/register.go:40 Started sending metric Data to Monitor Server : https://cse.cn-north-1.myhuaweicloud.com:443
+2018-08-22 10:06:55.645 +08:00 INFO metrics/metric.go:63 report metrics to Prometheus
+2018-08-22 10:06:55.647 +08:00 INFO prom/prometheus.go:253 Go Runtime Metrics is enabled
+2018-08-22 10:06:55.647 +08:00 WARN config-center/config_center.go:119 configcenter.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:06:55.737 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from ConfigCenterSource
+2018-08-22 10:06:55.740 +08:00 WARN config-center/config_center.go:78 config center init success
+2018-08-22 10:06:55.741 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteFileSource
+2018-08-22 10:06:55.741 +08:00 INFO cse/router_manager.go:132 Add [RouteFileSource] source success
+2018-08-22 10:06:55.741 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteDarkLaunchGovernSource
+2018-08-22 10:06:55.742 +08:00 INFO cse/router_manager.go:132 Add [RouteDarkLaunchGovernSource] source success
+2018-08-22 10:06:55.742 +08:00 INFO router/router_config.go:39 Router init success
+2018-08-22 10:06:55.743 +08:00 INFO tracing/tracer_manager.go:35 Tracing enabled. Start to init tracer map.
+2018-08-22 10:06:55.743 +08:00 INFO go-chassis/chassis.go:277 Init chassis success, Version is 0.5
+2018-08-22 10:06:55.744 +08:00 INFO archaius/archaius.go:88 config value after change mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 10:06:55.744 +08:00 INFO config-center/config_center.go:210 config value mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 10:06:55.744 +08:00 INFO bootstrap/bootstrap.go:52 Running as sidecar
+2018-08-22 10:06:55.746 +08:00 INFO adminapi/router.go:47 admin server is not using ssl
+2018-08-22 10:06:55.746 +08:00 INFO adminapi/router.go:51 admin server listening on [::]:30102
+2018-08-22 10:06:56.747 +08:00 INFO adminapi/router.go:64 admin server start success
+2018-08-22 10:06:56.747 +08:00 WARN bootstrap/bootstrap.go:41 local service ports is missing, service can not be called by mesher
+2018-08-22 10:06:56.748 +08:00 INFO mesher/mesher.go:38 Version is 1.4.12
+2018-08-22 10:06:56.750 +08:00 INFO server/server_manager.go:58 starting server http...
+2018-08-22 10:06:56.751 +08:00 WARN http/http_server.go:102 Mesher listen on 127.0.0.1, it can only proxy for consumer. for provider, mesher must listen on external ip.
+2018-08-22 10:06:56.751 +08:00 INFO server/server_manager.go:64 http server start success
+2018-08-22 10:06:56.752 +08:00 INFO server/server_manager.go:66 All server Start Completed
+2018-08-22 10:06:56.752 +08:00 INFO registry/bootstrap.go:112 Start to register instance.
+2018-08-22 10:06:56.783 +08:00 INFO registry/bootstrap.go:132 service support protocols map[http:{127.0.0.1:30101  %!s(int=0)  }]
+2018-08-22 10:06:56.833 +08:00 WARN servicecenter/servicecenter.go:58 RegisterMicroServiceInstance get SelfInstancesCache failed, Mid/Sid: 0a8ec6c4a5b011e898ba0255ac10552b/0b60c37fa5b011e8a7170255ac105125
+2018-08-22 10:06:56.833 +08:00 WARN servicecenter/servicecenter.go:62 RegisterMicroServiceInstance type asserts failed,  Mid/Sid: 0a8ec6c4a5b011e898ba0255ac10552b/0b60c37fa5b011e8a7170255ac105125
+2018-08-22 10:06:56.835 +08:00 INFO servicecenter/servicecenter.go:74 RegisterMicroServiceInstance success, MicroServiceID: 0a8ec6c4a5b011e898ba0255ac10552b
+2018-08-22 10:06:56.836 +08:00 INFO registry/heartbeat.go:49 Add HB task, task:0a8ec6c4a5b011e898ba0255ac10552b/0b60c37fa5b011e8a7170255ac105125
+2018-08-22 10:06:56.836 +08:00 INFO servicecenter/servicecenter.go:80 RegisterMicroServiceInstance success, microServiceID/instanceID: 0a8ec6c4a5b011e898ba0255ac10552b/0b60c37fa5b011e8a7170255ac105125.
+2018-08-22 10:06:56.837 +08:00 INFO registry/bootstrap.go:177 Register instance success, serviceID/instanceID: 0a8ec6c4a5b011e898ba0255ac10552b/0b60c37fa5b011e8a7170255ac105125.
+2018-08-22 10:06:57.768 +08:00 INFO cse-collector/csemonitor.go:91 Connection to monitoring server established successfully
+2018-08-22 10:15:37.407 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from CommandlineSource
+2018-08-22 10:15:37.407 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from MemorySource
+2018-08-22 10:15:37.408 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\circuit_breaker.yaml] not exist
+2018-08-22 10:15:37.408 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\load_balancing.yaml] not exist
+2018-08-22 10:15:37.408 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\rate_limiting.yaml] not exist
+2018-08-22 10:15:37.409 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tls.yaml] not exist
+2018-08-22 10:15:37.409 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\monitoring.yaml] not exist
+2018-08-22 10:15:37.409 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tracing.yaml] not exist
+2018-08-22 10:15:37.410 +08:00 INFO archaius/archaius.go:75 Configuration files: F:\Software\mesher\conf\chassis.yaml, F:\Software\mesher\conf\microservice.yaml, F:\Software\mesher\conf\auth.yaml
+2018-08-22 10:15:37.410 +08:00 INFO config/config.go:312 archaius init success
+2018-08-22 10:15:37.413 +08:00 WARN auth/auth.go:249 Huawei Cloud auth mode: ak/sk
+2018-08-22 10:15:37.413 +08:00 INFO go-chassis/chassis.go:102 Chain init success
+2018-08-22 10:15:37.414 +08:00 WARN registry/util.go:185 registrator.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:15:37.415 +08:00 WARN registry/util.go:185 serviceDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:15:37.415 +08:00 WARN registry/util.go:185 contractDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:15:37.416 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:15:37.416 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [helloWorld].
+2018-08-22 10:15:37.418 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 10:15:37.418 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 10:15:37.689 +08:00 INFO servicecenter/servicecenter.go:41 [helloWorld:0.0.1:weathermap] exists in registry
+2018-08-22 10:15:37.690 +08:00 INFO registry/bootstrap.go:61 Register [helloWorld] success
+2018-08-22 10:15:37.760 +08:00 INFO registry/bootstrap.go:90 Don't need add dependency
+2018-08-22 10:15:37.761 +08:00 INFO registry/registrator.go:83 Enable [servicecenter] registrator.
+2018-08-22 10:15:37.762 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:15:38.019 +08:00 INFO registry/discovery.go:67 Enable servicecenter service discovery.
+2018-08-22 10:15:38.019 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:15:38.021 +08:00 INFO registry/discovery.go:85 Enable servicecenter contract discovery.
+2018-08-22 10:15:38.022 +08:00 INFO registry/registrator.go:156 Enabled Registry
+2018-08-22 10:15:38.023 +08:00 INFO loadbalancer/load_balancer.go:112 Enable LoadBalancing
+2018-08-22 10:15:38.023 +08:00 INFO loadbalancer/load_balancer.go:126 Strategy is 
+2018-08-22 10:15:38.024 +08:00 INFO bootstrap/bootstrap.go:37 Bootstrap metric
+2018-08-22 10:15:38.024 +08:00 INFO metrics/metric.go:63 report metrics to CSE Monitoring
+2018-08-22 10:15:38.025 +08:00 WARN cse-collector/utils.go:45 monitor.Consumer TLS mode, verify peer: false, cipher plugin: default
+2018-08-22 10:15:38.025 +08:00 INFO cse-collector/register.go:40 Started sending metric Data to Monitor Server : https://cse.cn-north-1.myhuaweicloud.com:443
+2018-08-22 10:15:38.025 +08:00 INFO metrics/metric.go:63 report metrics to Prometheus
+2018-08-22 10:15:38.026 +08:00 INFO prom/prometheus.go:253 Go Runtime Metrics is enabled
+2018-08-22 10:15:38.026 +08:00 WARN config-center/config_center.go:119 configcenter.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:15:38.116 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from ConfigCenterSource
+2018-08-22 10:15:38.117 +08:00 WARN config-center/config_center.go:78 config center init success
+2018-08-22 10:15:38.118 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteFileSource
+2018-08-22 10:15:38.118 +08:00 INFO cse/router_manager.go:132 Add [RouteFileSource] source success
+2018-08-22 10:15:38.120 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteDarkLaunchGovernSource
+2018-08-22 10:15:38.120 +08:00 INFO cse/router_manager.go:132 Add [RouteDarkLaunchGovernSource] source success
+2018-08-22 10:15:38.121 +08:00 INFO router/router_config.go:39 Router init success
+2018-08-22 10:15:38.121 +08:00 INFO tracing/tracer_manager.go:35 Tracing enabled. Start to init tracer map.
+2018-08-22 10:15:38.122 +08:00 INFO go-chassis/chassis.go:277 Init chassis success, Version is 0.5
+2018-08-22 10:15:38.124 +08:00 INFO bootstrap/bootstrap.go:52 Running as sidecar
+2018-08-22 10:15:38.124 +08:00 INFO archaius/archaius.go:88 config value after change mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 10:15:38.124 +08:00 INFO config-center/config_center.go:210 config value mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 10:15:38.124 +08:00 INFO adminapi/router.go:47 admin server is not using ssl
+2018-08-22 10:15:38.125 +08:00 INFO adminapi/router.go:51 admin server listening on [::]:30102
+2018-08-22 10:16:28.069 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from CommandlineSource
+2018-08-22 10:16:28.070 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from MemorySource
+2018-08-22 10:16:28.071 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\circuit_breaker.yaml] not exist
+2018-08-22 10:16:28.071 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\load_balancing.yaml] not exist
+2018-08-22 10:16:28.071 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\rate_limiting.yaml] not exist
+2018-08-22 10:16:28.071 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tls.yaml] not exist
+2018-08-22 10:16:28.072 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\monitoring.yaml] not exist
+2018-08-22 10:16:28.073 +08:00 INFO archaius/archaius.go:49 [F:\Software\mesher\conf\tracing.yaml] not exist
+2018-08-22 10:16:28.074 +08:00 INFO archaius/archaius.go:75 Configuration files: F:\Software\mesher\conf\chassis.yaml, F:\Software\mesher\conf\microservice.yaml, F:\Software\mesher\conf\auth.yaml
+2018-08-22 10:16:28.074 +08:00 INFO config/config.go:312 archaius init success
+2018-08-22 10:16:28.076 +08:00 WARN auth/auth.go:249 Huawei Cloud auth mode: ak/sk
+2018-08-22 10:16:28.077 +08:00 INFO go-chassis/chassis.go:102 Chain init success
+2018-08-22 10:16:28.077 +08:00 WARN registry/util.go:185 registrator.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:16:28.078 +08:00 WARN registry/util.go:185 serviceDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:16:28.078 +08:00 WARN registry/util.go:185 contractDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:16:28.079 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:16:28.079 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [helloWorld].
+2018-08-22 10:16:28.079 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 10:16:28.080 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 10:16:28.231 +08:00 WARN servicecenter/servicecenter.go:34 service [helloWorld:0.0.1:weathermap] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 10:16:28.277 +08:00 INFO registry/bootstrap.go:61 Register [helloWorld] success
+2018-08-22 10:16:28.331 +08:00 INFO registry/bootstrap.go:90 Don't need add dependency
+2018-08-22 10:16:28.332 +08:00 INFO registry/registrator.go:83 Enable [servicecenter] registrator.
+2018-08-22 10:16:28.333 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:16:28.495 +08:00 INFO registry/discovery.go:67 Enable servicecenter service discovery.
+2018-08-22 10:16:28.496 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 10:16:28.497 +08:00 INFO registry/discovery.go:85 Enable servicecenter contract discovery.
+2018-08-22 10:16:28.498 +08:00 INFO registry/registrator.go:156 Enabled Registry
+2018-08-22 10:16:28.499 +08:00 INFO loadbalancer/load_balancer.go:112 Enable LoadBalancing
+2018-08-22 10:16:28.499 +08:00 INFO loadbalancer/load_balancer.go:126 Strategy is 
+2018-08-22 10:16:28.500 +08:00 INFO bootstrap/bootstrap.go:37 Bootstrap metric
+2018-08-22 10:16:28.501 +08:00 INFO metrics/metric.go:63 report metrics to CSE Monitoring
+2018-08-22 10:16:28.501 +08:00 WARN cse-collector/utils.go:45 monitor.Consumer TLS mode, verify peer: false, cipher plugin: default
+2018-08-22 10:16:28.502 +08:00 INFO cse-collector/register.go:40 Started sending metric Data to Monitor Server : https://cse.cn-north-1.myhuaweicloud.com:443
+2018-08-22 10:16:28.502 +08:00 INFO metrics/metric.go:63 report metrics to Prometheus
+2018-08-22 10:16:28.503 +08:00 INFO prom/prometheus.go:253 Go Runtime Metrics is enabled
+2018-08-22 10:16:28.503 +08:00 WARN config-center/config_center.go:119 configcenter.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 10:16:28.604 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from ConfigCenterSource
+2018-08-22 10:16:28.605 +08:00 WARN config-center/config_center.go:78 config center init success
+2018-08-22 10:16:28.606 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteFileSource
+2018-08-22 10:16:28.606 +08:00 INFO cse/router_manager.go:132 Add [RouteFileSource] source success
+2018-08-22 10:16:28.608 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteDarkLaunchGovernSource
+2018-08-22 10:16:28.608 +08:00 INFO cse/router_manager.go:132 Add [RouteDarkLaunchGovernSource] source success
+2018-08-22 10:16:28.608 +08:00 INFO router/router_config.go:39 Router init success
+2018-08-22 10:16:28.609 +08:00 INFO tracing/tracer_manager.go:35 Tracing enabled. Start to init tracer map.
+2018-08-22 10:16:28.610 +08:00 INFO go-chassis/chassis.go:277 Init chassis success, Version is 0.5
+2018-08-22 10:16:28.611 +08:00 INFO archaius/archaius.go:88 config value after change mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 10:16:28.611 +08:00 INFO config-center/config_center.go:210 config value mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 10:16:28.611 +08:00 INFO bootstrap/bootstrap.go:52 Running as sidecar
+2018-08-22 10:16:28.613 +08:00 INFO adminapi/router.go:47 admin server is not using ssl
+2018-08-22 10:16:28.613 +08:00 INFO adminapi/router.go:51 admin server listening on [::]:30102
+2018-08-22 10:16:29.614 +08:00 INFO adminapi/router.go:64 admin server start success
+2018-08-22 10:16:29.614 +08:00 WARN bootstrap/bootstrap.go:41 local service ports is missing, service can not be called by mesher
+2018-08-22 10:16:29.615 +08:00 INFO mesher/mesher.go:38 Version is 1.4.12
+2018-08-22 10:16:29.616 +08:00 INFO server/server_manager.go:58 starting server http...
+2018-08-22 10:16:29.617 +08:00 WARN http/http_server.go:102 Mesher listen on 127.0.0.1, it can only proxy for consumer. for provider, mesher must listen on external ip.
+2018-08-22 10:16:29.618 +08:00 INFO server/server_manager.go:64 http server start success
+2018-08-22 10:16:29.618 +08:00 INFO server/server_manager.go:66 All server Start Completed
+2018-08-22 10:16:29.619 +08:00 INFO registry/bootstrap.go:112 Start to register instance.
+2018-08-22 10:16:29.652 +08:00 INFO registry/bootstrap.go:132 service support protocols map[http:{127.0.0.1:30101  %!s(int=0)  }]
+2018-08-22 10:16:29.697 +08:00 WARN servicecenter/servicecenter.go:58 RegisterMicroServiceInstance get SelfInstancesCache failed, Mid/Sid: 5fff1942a5b111e8a7170255ac105125/60d6d1cca5b111e8a7170255ac105125
+2018-08-22 10:16:29.697 +08:00 WARN servicecenter/servicecenter.go:62 RegisterMicroServiceInstance type asserts failed,  Mid/Sid: 5fff1942a5b111e8a7170255ac105125/60d6d1cca5b111e8a7170255ac105125
+2018-08-22 10:16:29.698 +08:00 INFO servicecenter/servicecenter.go:74 RegisterMicroServiceInstance success, MicroServiceID: 5fff1942a5b111e8a7170255ac105125
+2018-08-22 10:16:29.699 +08:00 INFO registry/heartbeat.go:49 Add HB task, task:5fff1942a5b111e8a7170255ac105125/60d6d1cca5b111e8a7170255ac105125
+2018-08-22 10:16:29.701 +08:00 INFO servicecenter/servicecenter.go:80 RegisterMicroServiceInstance success, microServiceID/instanceID: 5fff1942a5b111e8a7170255ac105125/60d6d1cca5b111e8a7170255ac105125.
+2018-08-22 10:16:29.701 +08:00 INFO registry/bootstrap.go:177 Register instance success, serviceID/instanceID: 5fff1942a5b111e8a7170255ac105125/60d6d1cca5b111e8a7170255ac105125.
+2018-08-22 10:16:30.616 +08:00 INFO cse-collector/csemonitor.go:91 Connection to monitoring server established successfully
+2018-08-22 14:24:43.670 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from CommandlineSource
+2018-08-22 14:24:43.670 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from MemorySource
+2018-08-22 14:24:43.671 +08:00 INFO archaius/archaius.go:49 [F:\php\phpstudy\PHPTutorial\WWW\lumen55\mesher\conf\circuit_breaker.yaml] not exist
+2018-08-22 14:24:43.671 +08:00 INFO archaius/archaius.go:49 [F:\php\phpstudy\PHPTutorial\WWW\lumen55\mesher\conf\load_balancing.yaml] not exist
+2018-08-22 14:24:43.671 +08:00 INFO archaius/archaius.go:49 [F:\php\phpstudy\PHPTutorial\WWW\lumen55\mesher\conf\rate_limiting.yaml] not exist
+2018-08-22 14:24:43.672 +08:00 INFO archaius/archaius.go:49 [F:\php\phpstudy\PHPTutorial\WWW\lumen55\mesher\conf\tls.yaml] not exist
+2018-08-22 14:24:43.672 +08:00 INFO archaius/archaius.go:49 [F:\php\phpstudy\PHPTutorial\WWW\lumen55\mesher\conf\monitoring.yaml] not exist
+2018-08-22 14:24:43.672 +08:00 INFO archaius/archaius.go:49 [F:\php\phpstudy\PHPTutorial\WWW\lumen55\mesher\conf\tracing.yaml] not exist
+2018-08-22 14:24:43.673 +08:00 INFO archaius/archaius.go:75 Configuration files: F:\php\phpstudy\PHPTutorial\WWW\lumen55\mesher\conf\chassis.yaml, F:\php\phpstudy\PHPTutorial\WWW\lumen55\mesher\conf\microservice.yaml, F:\php\phpstudy\PHPTutorial\WWW\lumen55\mesher\conf\auth.yaml
+2018-08-22 14:24:43.673 +08:00 INFO config/config.go:312 archaius init success
+2018-08-22 14:24:43.677 +08:00 WARN auth/auth.go:249 Huawei Cloud auth mode: ak/sk
+2018-08-22 14:24:43.678 +08:00 INFO go-chassis/chassis.go:102 Chain init success
+2018-08-22 14:24:43.679 +08:00 WARN registry/util.go:185 registrator.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 14:24:43.681 +08:00 WARN registry/util.go:185 serviceDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 14:24:43.681 +08:00 WARN registry/util.go:185 contractDiscovery.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 14:24:43.682 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 14:24:43.683 +08:00 WARN registry/bootstrap.go:30 No schemas file for microservice [lumen].
+2018-08-22 14:24:43.683 +08:00 INFO registry/bootstrap.go:52 Framework registered is [ Mesher:1.4.12 ]
+2018-08-22 14:24:43.684 +08:00 INFO registry/bootstrap.go:53 Micro service registered by [ SIDECAR ]
+2018-08-22 14:24:46.593 +08:00 WARN servicecenter/servicecenter.go:34 service [lumen:0.0.1:test] not exists in registry, register it%!(EXTRA <nil>)
+2018-08-22 14:24:46.970 +08:00 INFO registry/bootstrap.go:61 Register [lumen] success
+2018-08-22 14:24:47.290 +08:00 INFO registry/bootstrap.go:90 Don't need add dependency
+2018-08-22 14:24:47.290 +08:00 INFO registry/registrator.go:83 Enable [servicecenter] registrator.
+2018-08-22 14:24:47.291 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 14:24:49.273 +08:00 INFO registry/discovery.go:67 Enable servicecenter service discovery.
+2018-08-22 14:24:49.273 +08:00 INFO go-sc-client/client.go:142 Use Service center v4
+2018-08-22 14:24:49.275 +08:00 INFO registry/discovery.go:85 Enable servicecenter contract discovery.
+2018-08-22 14:24:49.276 +08:00 INFO registry/registrator.go:156 Enabled Registry
+2018-08-22 14:24:49.276 +08:00 INFO loadbalancer/load_balancer.go:112 Enable LoadBalancing
+2018-08-22 14:24:49.277 +08:00 INFO loadbalancer/load_balancer.go:126 Strategy is 
+2018-08-22 14:24:49.278 +08:00 INFO bootstrap/bootstrap.go:37 Bootstrap metric
+2018-08-22 14:24:49.278 +08:00 INFO metrics/metric.go:63 report metrics to CSE Monitoring
+2018-08-22 14:24:49.279 +08:00 WARN cse-collector/utils.go:45 monitor.Consumer TLS mode, verify peer: false, cipher plugin: default
+2018-08-22 14:24:49.279 +08:00 INFO cse-collector/register.go:40 Started sending metric Data to Monitor Server : https://cse.cn-north-1.myhuaweicloud.com:443
+2018-08-22 14:24:49.280 +08:00 INFO metrics/metric.go:63 report metrics to Prometheus
+2018-08-22 14:24:49.281 +08:00 INFO prom/prometheus.go:253 Go Runtime Metrics is enabled
+2018-08-22 14:24:49.281 +08:00 WARN config-center/config_center.go:119 configcenter.Consumer TLS mode, verify peer: false, cipher plugin: default.
+2018-08-22 14:24:51.281 +08:00 WARN cse-collector/csemonitor.go:69 waiting for instance registration: [105288d1a5d411e8a7170255ac105125]
+2018-08-22 14:24:51.973 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from ConfigCenterSource
+2018-08-22 14:24:51.974 +08:00 WARN config-center/config_center.go:78 config center init success
+2018-08-22 14:24:51.975 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteFileSource
+2018-08-22 14:24:51.976 +08:00 INFO cse/router_manager.go:132 Add [RouteFileSource] source success
+2018-08-22 14:24:51.977 +08:00 WARN config-manager/configurationmanager.go:139 empty configurtion from RouteDarkLaunchGovernSource
+2018-08-22 14:24:51.977 +08:00 INFO cse/router_manager.go:132 Add [RouteDarkLaunchGovernSource] source success
+2018-08-22 14:24:51.978 +08:00 INFO router/router_config.go:39 Router init success
+2018-08-22 14:24:51.978 +08:00 INFO tracing/tracer_manager.go:35 Tracing enabled. Start to init tracer map.
+2018-08-22 14:24:51.979 +08:00 INFO go-chassis/chassis.go:277 Init chassis success, Version is 0.5
+2018-08-22 14:24:51.980 +08:00 INFO archaius/archaius.go:88 config value after change mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 14:24:51.980 +08:00 INFO config-center/config_center.go:210 config value mesher.yaml | ## Router rules and fault injection rules are moved to router.yaml
+#plugin:
+#  destinationResolver: host # how to turn host to destination name. default to service name，
+
+##admin: #admin API
+#  serverUri : 127.0.0.1:30102 # addr on listening
+#  goRuntimeMetrics : true # enable metrics
+
+## enable pprof to profile mesher runtime
+#pprof:
+#  enable: false
+2018-08-22 14:24:51.981 +08:00 INFO bootstrap/bootstrap.go:52 Running as sidecar
+2018-08-22 14:24:51.982 +08:00 INFO adminapi/router.go:47 admin server is not using ssl
+2018-08-22 14:24:51.982 +08:00 INFO adminapi/router.go:51 admin server listening on [::]:30102
+2018-08-22 14:24:52.983 +08:00 INFO adminapi/router.go:64 admin server start success
+2018-08-22 14:24:52.983 +08:00 WARN bootstrap/bootstrap.go:41 local service ports is missing, service can not be called by mesher
+2018-08-22 14:24:52.983 +08:00 INFO mesher/mesher.go:38 Version is 1.4.12
+2018-08-22 14:24:52.984 +08:00 INFO server/server_manager.go:58 starting server http...
+2018-08-22 14:24:52.985 +08:00 WARN http/http_server.go:102 Mesher listen on 127.0.0.1, it can only proxy for consumer. for provider, mesher must listen on external ip.
+2018-08-22 14:24:52.986 +08:00 INFO server/server_manager.go:64 http server start success
+2018-08-22 14:24:52.986 +08:00 INFO server/server_manager.go:66 All server Start Completed
+2018-08-22 14:24:52.987 +08:00 INFO registry/bootstrap.go:112 Start to register instance.
+2018-08-22 14:24:53.280 +08:00 WARN cse-collector/csemonitor.go:69 waiting for instance registration: [105288d1a5d411e8a7170255ac105125]
+2018-08-22 14:24:53.933 +08:00 INFO registry/bootstrap.go:132 service support protocols map[http:{127.0.0.1:30101  %!s(int=0)  }]
+2018-08-22 14:24:54.904 +08:00 WARN servicecenter/servicecenter.go:58 RegisterMicroServiceInstance get SelfInstancesCache failed, Mid/Sid: 105288d1a5d411e8a7170255ac105125/14b6497fa5d411e8a7170255ac105125
+2018-08-22 14:24:54.904 +08:00 WARN servicecenter/servicecenter.go:62 RegisterMicroServiceInstance type asserts failed,  Mid/Sid: 105288d1a5d411e8a7170255ac105125/14b6497fa5d411e8a7170255ac105125
+2018-08-22 14:24:54.905 +08:00 INFO servicecenter/servicecenter.go:74 RegisterMicroServiceInstance success, MicroServiceID: 105288d1a5d411e8a7170255ac105125
+2018-08-22 14:24:54.906 +08:00 INFO registry/heartbeat.go:49 Add HB task, task:105288d1a5d411e8a7170255ac105125/14b6497fa5d411e8a7170255ac105125
+2018-08-22 14:24:54.907 +08:00 INFO servicecenter/servicecenter.go:80 RegisterMicroServiceInstance success, microServiceID/instanceID: 105288d1a5d411e8a7170255ac105125/14b6497fa5d411e8a7170255ac105125.
+2018-08-22 14:24:54.908 +08:00 INFO registry/bootstrap.go:177 Register instance success, serviceID/instanceID: 105288d1a5d411e8a7170255ac105125/14b6497fa5d411e8a7170255ac105125.
+2018-08-22 14:24:58.596 +08:00 INFO cse-collector/csemonitor.go:91 Connection to monitoring server established successfully
+2018-08-22 14:29:01.856 +08:00 WARN cse-collector/csemonitor.go:85 Unable to connect to monitoring server, err: Post https://cse.cn-north-1.myhuaweicloud.com:443/v2/default/csemonitor/metric?service=lumen: read tcp 192.168.1.5:50752->43.254.0.22:443: wsarecv: An established connection was aborted by the software in your host machine.
+2018-08-22 14:29:07.864 +08:00 INFO cse-collector/csemonitor.go:96 Connection recovered successfully to monitoring server
+2018-08-22 14:30:33.755 +08:00 ERROR servicecenter/servicecenter.go:164 Heartbeat failed, microServiceID/instanceID: 105288d1a5d411e8a7170255ac105125/14b6497fa5d411e8a7170255ac105125. error: Put https://cse.cn-north-1.myhuaweicloud.com:443/v4/default/registry/microservices/105288d1a5d411e8a7170255ac105125/instances/14b6497fa5d411e8a7170255ac105125/heartbeat: read tcp 192.168.43.16:50818->43.254.0.22:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2018-08-22 14:30:33.755 +08:00 ERROR registry/heartbeat.go:94 Run Heartbeat fail error: Put https://cse.cn-north-1.myhuaweicloud.com:443/v4/default/registry/microservices/105288d1a5d411e8a7170255ac105125/instances/14b6497fa5d411e8a7170255ac105125/heartbeat: read tcp 192.168.43.16:50818->43.254.0.22:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2018-08-22 14:30:38.476 +08:00 ERROR servicecenter/cache.go:180 get Providers failed, sid = 105288d1a5d411e8a7170255ac105125 error: Get Providers failed, error: Get https://cse.cn-north-1.myhuaweicloud.com:443/v4/default/registry/microservices/105288d1a5d411e8a7170255ac105125/providers: read tcp 192.168.43.16:50830->43.254.0.22:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond., MicroServiceid: 105288d1a5d411e8a7170255ac105125
+2018-08-22 14:30:38.477 +08:00 ERROR servicecenter/cache.go:74 AutoUpdateMicroserviceInstance failed. error: Get Providers failed, error: Get https://cse.cn-north-1.myhuaweicloud.com:443/v4/default/registry/microservices/105288d1a5d411e8a7170255ac105125/providers: read tcp 192.168.43.16:50830->43.254.0.22:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond., MicroServiceid: 105288d1a5d411e8a7170255ac105125
+2018-08-22 14:30:41.176 +08:00 WARN configcenter-source/configcentersource.go:344 Failed to pull configurations from config center server%!(EXTRA *url.Error=Get https://cse.cn-north-1.myhuaweicloud.com:443/v3/default/configuration/items?dimensionsInfo=lumen@test%230.0.1: read tcp 192.168.43.16:50834->43.254.0.22:443: wsarecv: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.)
+2018-08-22 14:30:43.758 +08:00 INFO registry/heartbeat.go:124 Try to re-register self
+2018-08-22 14:30:44.598 +08:00 INFO servicecenter/servicecenter.go:74 RegisterMicroServiceInstance success, MicroServiceID: 105288d1a5d411e8a7170255ac105125
+2018-08-22 14:30:44.598 +08:00 INFO registry/heartbeat.go:49 Add HB task, task:105288d1a5d411e8a7170255ac105125/e5ac8eafa5d411e8a7170255ac105125
+2018-08-22 14:30:44.600 +08:00 INFO servicecenter/servicecenter.go:80 RegisterMicroServiceInstance success, microServiceID/instanceID: 105288d1a5d411e8a7170255ac105125/e5ac8eafa5d411e8a7170255ac105125.
+2018-08-22 14:30:44.602 +08:00 WARN registry/heartbeat.go:184 RegisterMicroServiceInstance get SelfInstancesCache failed, Mid/Sid: /e5ac8eafa5d411e8a7170255ac105125
+2018-08-22 14:30:44.602 +08:00 WARN registry/heartbeat.go:188 RegisterMicroServiceInstance type asserts failed,  Mid/Sid: /e5ac8eafa5d411e8a7170255ac105125
+2018-08-22 14:30:44.603 +08:00 WARN registry/heartbeat.go:200 RegisterMicroServiceInstance success, microServiceID/instanceID: /e5ac8eafa5d411e8a7170255ac105125.
+2018-08-22 14:30:44.603 +08:00 WARN registry/heartbeat.go:139 Re-register self success
+2018-08-22 14:30:52.447 +08:00 INFO configcenter-source/configcentersource.go:324 Recover configurations from config center server
+2018-08-22 14:48:01.289 +08:00 WARN cse-collector/csemonitor.go:85 Unable to connect to monitoring server, err: Post https://cse.cn-north-1.myhuaweicloud.com:443/v2/default/csemonitor/metric?service=lumen: dial tcp: lookup cse.cn-north-1.myhuaweicloud.com: no such host
+2018-08-22 14:48:09.205 +08:00 INFO cse-collector/csemonitor.go:96 Connection recovered successfully to monitoring server
